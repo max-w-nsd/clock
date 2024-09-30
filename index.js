@@ -1,7 +1,9 @@
 var text = document.getElementById("time");
 
 function update() {
-    text.textContent = new Date().toLocaleTimeString();
+    var x = new Date().toLocaleTimeString();
+    text.textContent = x;
+    document.title = x;
 }
 
 setInterval(update);
